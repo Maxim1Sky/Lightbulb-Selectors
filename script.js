@@ -7,21 +7,21 @@ const bulb2 = document.querySelector("#lightbulb2");
 const bulb3 = document.querySelector("#lightbulb3");
 
 bulb1.addEventListener("click", function () {
-  bulb1.classList.toggle("active");
+  this.classList.toggle("active");
 
   count++;
   output.innerHTML = `You've clicked the lights ${count} times`;
 });
 
 bulb2.addEventListener("click", function () {
-  bulb2.classList.toggle("active");
+  this.classList.toggle("active");
 
   count++;
   output.innerHTML = `You've clicked the lights ${count} times`;
 });
 
 bulb3.addEventListener("click", function () {
-  bulb3.classList.toggle("active");
+  this.classList.toggle("active");
 
   count++;
   output.innerHTML = `You've clicked the lights ${count} times`;
