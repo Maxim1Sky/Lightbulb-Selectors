@@ -29,10 +29,18 @@ let count = 0;
 
 const lightbulbs = document.querySelectorAll(".lightbulb");
 
-lightbulbs.forEach(function (bulb) {
+// lightbulbs.forEach(function (bulb) {
+//   bulb.addEventListener("click", function () {
+//     this.classList.toggle("active");
+//     count++;
+//     output.innerHTML = `You've clicked the lights ${count} times`;
+//   });
+// });
+
+for (bulb of lightbulbs) {
   bulb.addEventListener("click", function () {
     this.classList.toggle("active");
     count++;
     output.innerHTML = `You've clicked the lights ${count} times`;
   });
-});
+}
